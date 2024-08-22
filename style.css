@@ -1,0 +1,122 @@
+body {
+  font-family: var(--judul);
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  background-color: #4d4a4a;
+}
+
+:root {
+  --teknik: #979797;
+  --judul: "Archivo Black", sans-serif;
+  --isi: "News Cycle", sans-serif;
+  --teks: #f9f8f8;
+  --bgcard: rgb(32, 34, 28);
+  box-shadow: 0 0 10px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: var(--teknik);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px;
+}
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  font-family: var(--judul);
+  color: #d3d3d3;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container h1 span {
+  color: rgb(0, 0, 0);
+}
+
+/* .info h1 {
+  font-family: var(--judul);
+  color: #d3d3d3;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.info h1 span {
+  color: rgb(187, 255, 0);
+} */
+.info p {
+  color: var(--teks);
+  font-style: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.info p span {
+  color: rgb(0, 0, 0);
+}
+
+/* START */
+
+.primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.primary .card {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: rgb(121, 121, 121);
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
+  box-shadow: 0 0 10px;
+}
+.primary .card:hover {
+  filter: grayscale(1);
+  transform: scale(1.03);
+}
+.primary .card img {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border: 2px solid #ff3d0036;
+  border-radius: 13px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
+}
+
+.primary .card p {
+  color: var(--teks);
+  font-style: inherit;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.primary .card p span {
+  color: var(--bgcard);
+}
